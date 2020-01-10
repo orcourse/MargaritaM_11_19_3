@@ -1,0 +1,132 @@
+.top-border .menu .top_menu li:hover a {
+  color: #f09d66;
+}
+
+header .navbar .collapse .nav a {
+  color: #000;
+  font-family: "Playfair Display", "serif";
+}
+
+header .navbar .collapse .nav li:hover a {
+  color: #f09d66;
+}
+
+header .navig li a {
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+header .navig li:hover a {
+  color: #f09d66;
+}
+
+.container3 .sale .content a {
+  background: #f09d66;
+}
+
+.container3 .sale .content a:hover {
+  background: #000;
+}
+
+.container6 .square1 a {
+  background: #f09d66;
+}
+
+.container6 .square2 a {
+  background: #f09d66;
+}
+
+.container8 .block .item #trapezium1:hover {
+  border-bottom: 45px solid #f09d66;
+}
+
+.container8 .block .item #trapezium2:hover {
+  border-bottom: 45px solid #f09d66;
+}
+
+.container12 .descr1 h3 {
+  font-family: "Playfair Display", "serif";
+}
+
+.container12 .descr2 h3 {
+  font-family: "Playfair Display", "serif";
+}
+
+footer span {
+  font-family: "Playfair Display", "serif";
+}
+
+/******************Mixin*******************/
+.container5 .title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+.container7 .title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+.container9 .title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+.container11 .title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+/*************Function************************/
+#trapezium1 {
+  width: 70%;
+  left: 15%;
+}
+
+#trapezium2 {
+  width: 70%;
+  left: 15%;
+}
+
+@media (max-width: 991px) {
+  .container5 .title {
+    font-size: 25px;
+  }
+  .container7 .title {
+    font-size: 25px;
+  }
+  .container9 .title {
+    font-size: 25px;
+  }
+  .container11 .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container5 .title {
+    font-size: 20px;
+  }
+  .container7 .title {
+    font-size: 20px;
+  }
+  .container9 .title {
+    font-size: 20px;
+  }
+  .container11 .title {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=scssStyle.css.map */

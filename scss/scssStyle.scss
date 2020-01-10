@@ -1,0 +1,144 @@
+$mainColor: #f09d66;
+$mainColor2: #000;
+$mainFont: 'Playfair Display','serif';
+
+
+.top-border .menu .top_menu li:hover a{
+    color: $mainColor;
+}
+
+header .navbar .collapse .nav a{
+    color: $mainColor2;
+    font-family: $mainFont;
+}
+
+header .navbar .collapse .nav li:hover a{
+    color: $mainColor;
+}
+
+header .navig li a{
+    font-family: $mainFont;
+    color: $mainColor2;
+}
+
+header .navig li:hover a{
+    color: $mainColor;
+}
+
+.container3 .sale .content a{
+    background: $mainColor;
+}
+
+.container3 .sale .content a:hover{
+    background: $mainColor2;
+}
+
+.container6 .square1 a{
+    background: $mainColor;
+}
+
+.container6 .square2 a{
+    background: $mainColor;
+}
+
+.container8 .block .item #trapezium1:hover {
+    border-bottom: 45px solid $mainColor;
+}
+
+.container8 .block .item #trapezium2:hover {
+    border-bottom: 45px solid $mainColor;
+}
+
+.container12 .descr1 h3{
+    font-family: $mainFont;
+}
+
+.container12 .descr2 h3{
+    font-family: $mainFont;
+}
+
+footer span{
+    font-family: $mainFont;
+}
+
+/******************Mixin*******************/
+
+@mixin styleTitle($size, $style, $weight){
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    font-family: $mainFont;
+    color: $mainColor2;
+}
+
+.container5 .title {
+    @include styleTitle(30px, italic, bold,);
+}
+
+.container7 .title {
+    @include styleTitle(30px, italic, bold);
+}
+
+.container9 .title {
+    @include styleTitle(30px, italic, bold);
+}
+
+.container11 .title {
+    @include styleTitle(30px, italic, bold);
+}
+
+/*************Function************************/
+
+$trapez-width: 70%;
+
+@function shiftLeft($n) {
+  @return (100% - $n)/2;
+}
+
+#trapezium1 { 
+    width: $trapez-width;
+    left: shiftLeft($trapez-width); 
+}
+
+#trapezium2 { 
+    width: $trapez-width;
+    left: shiftLeft($trapez-width); 
+}
+
+
+@media(max-width: 991px){
+    .container5 .title{
+        font-size: 25px;
+    }
+
+    .container7 .title{
+        font-size: 25px;
+    }
+
+    .container9 .title{
+        font-size: 25px;
+    }
+
+    .container11 .title{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 767px){
+    .container5 .title{
+        font-size: 20px;
+    }
+
+    .container7 .title{
+        font-size: 20px;
+    }
+
+    .container9 .title{
+        font-size: 20px;
+    }
+
+    .container11 .title{
+        font-size: 20px;
+    }
+}
+
